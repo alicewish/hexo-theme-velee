@@ -79,6 +79,8 @@
           }) %>
     <% } else if (theme.youyan.on) { %>
         <%- partial('comments/youyan') %>
+	<% } else if (theme.livere.on) { %>
+		<%- partial('comments/livere') %>
     <% } else if (theme.disqus.on) { %>
         <%- partial('comments/disqus', {
             shortname: theme.disqus.shortname
