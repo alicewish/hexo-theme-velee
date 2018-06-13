@@ -268,7 +268,8 @@ baidu_tongji:
 # http://ibruce.info/2015/04/04/busuanzi/
 visit_counter:
   on: true
-  site_visit: true
+  site_pv: true
+  site_uv: true
   page_visit: true
 
 # GitHub Repo Widget
