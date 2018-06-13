@@ -176,7 +176,7 @@ Set `on: true` to enable this feature
 highlight theme from https://github.com/chriskempson/tomorrow-theme
 
 #### 5. Comment:
-Disqus, duoshuo and youyan is supported, enable ONE of them in theme's "_config.yml".
+Disqus, duoshuo livere and youyan is supported, enable ONE of them in theme's "_config.yml".
 
 
 #### 6. Table of Contents:
