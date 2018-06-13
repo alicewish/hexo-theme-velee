@@ -42,10 +42,6 @@
     <link href="//cdn.bootcss.com/pace/1.0.2/themes/<%= theme.progressBar.color || 'blue'%>/pace-theme-<%= theme.progressBar.type || 'minimal'%>.css" rel="stylesheet">
 <% } %>
 
-<% if (theme.visit_counter.on) { %>
-    <script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-<% } %>
-
 <%- css('css/style') %>
 
 <% if (is_home() && theme.animate){ %>

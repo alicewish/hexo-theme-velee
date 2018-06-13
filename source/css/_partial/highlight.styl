@@ -1,14 +1,14 @@
 @require "customise/code-block"
 
 $code-block
-  background: $highlight-background
+  background: highlight-background
   margin: auto
   padding: .35em 1.5em
   border-style: solid
   border-color: color-border
   border-width: 1px
   overflow: auto
-  color: $highlight-foreground
+  color: highlight-foreground
   line-height: 1.3rem
 
 $line-numbers
@@ -25,7 +25,7 @@ $line-numbers
       text-shadow none
       padding 0
       background none
-      color $highlight-foreground
+      color highlight-foreground
       box-shadow none
   .highlight
     @extend $code-block
@@ -49,7 +49,7 @@ $line-numbers
     figcaption
       clearfix()
       font-size: 0.85em
-      color: $highlight-comment
+      color: highlight-comment
       line-height: 1em
       margin-bottom: 1em
       a
@@ -65,7 +65,7 @@ $line-numbers
     border-style: solid
     border-color: color-border
     border-width: 1px 0
-    background: $highlight-background
+    background: highlight-background
     padding: 15px article-padding 15px 0
     .gist-file
       border: none
@@ -86,8 +86,8 @@ $line-numbers
         padding: 0
         border: none
       .gist-meta
-        background: $highlight-background
-        color: $highlight-comment
+        background: highlight-background
+        color: highlight-comment
         font: 0.85em font-sans
         text-shadow: 0 0
         padding: 0
@@ -104,7 +104,7 @@ $line-numbers
 pre
   .comment
   .title
-    color: $highlight-comment
+    color: highlight-comment
   .variable
   .attribute
   .tag
@@ -117,27 +117,27 @@ pre
   .css .id
   .css .class
   .css .pseudo
-    color: $highlight-red
+    color: highlight-red
   .number
   .preprocessor
   .built_in
   .literal
   .params
   .constant
-    color: $highlight-orange
+    color: highlight-orange
   .class
   .ruby .class .title
   .css .rules .attribute
-    color: $highlight-green
+    color: highlight-green
   .string
   .value
   .inheritance
   .header
   .ruby .symbol
   .xml .cdata
-    color: $highlight-green
+    color: highlight-green
   .css .hexcolor
-    color: $highlight-aqua
+    color: highlight-aqua
   .function
   .python .decorator
   .python .title
@@ -146,7 +146,7 @@ pre
   .perl .sub
   .javascript .title
   .coffeescript .title
-    color: $highlight-blue
+    color: highlight-blue
   .keyword
   .javascript .function
-    color: $highlight-purple
+    color: highlight-purple
