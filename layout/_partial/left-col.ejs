@@ -80,6 +80,27 @@
                                 <a class="fa <%= i %>" href="<%- url_for(theme.subnav[i]) %>" title="<%= i %>"></a>
                             <%}%>
                         </ul>
+                        <% if (theme.donate.on) { %>
+                            <ul class="social">
+                                <div style="position: absolute; top: 95%; left: 50%; margin-left: -30px;">
+                                    <p style="display: block">
+                                        <a
+                                            class="donateIcon"
+                                            href="javascript:void(0)"
+                                            onmouseout="
+                                                var qr = document.getElementById('donate');
+                                                qr.style.display='none';
+                                            "
+                                            onmouseenter="
+                                                var qr = document.getElementById('donate');
+                                                qr.style.display='block';
+                                            ">
+                                            赏
+                                        </a>
+                                    </p>
+                                </div>
+                            </ul>
+                        <% } %>
                     </nav>
                 </section>
                 
@@ -112,5 +133,11 @@
                 <%}%>
             </div>
         </div>
-    </header>                
+    </header>
+    <% if (theme.donate.multipay) { %>
+        <div id="donate">
+            <img id="multipay" src="<%=theme.donate.multipay%>" width="250px" alt="<%=theme.author%> Multipay"/>
+            <div class="triangle"></div>
+        </div>
+    <% } %>                
 </div>
