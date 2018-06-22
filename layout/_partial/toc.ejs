@@ -18,9 +18,12 @@
         }
     </style>
 
-    <input type="button" id="tocButton" value="<%= __('toc.hide') %>"  title="<%= __('tooltip.tocButton') %>">
+    <input type="button" id="tocButton" value="<%= __('toc.hide') %>" title="<%= __('tooltip.tocButton') %>">
 
     <script>
         yiliaConfig.toc = ["<%= __('toc.hide') %>", "<%= __('toc.show') %>", !!"<%= theme.toc.nowrap %>"];
+        if ($(".left-col").is(":hidden")) {
+          $("#tocButton").attr("value", yiliaConfig.toc[1]);
+        }
     </script>
 <% } %>
