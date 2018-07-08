@@ -80,9 +80,9 @@ require([], function () {
                 }
                 $(".article-inner .fancy-ctn").fancybox({
                     loop: false,
-                    touch: false,
+                    touch: true,
                     toolbar: true,
-                    wheel: false,
+                    wheel: true,
                     keyboard: true,
                     buttons: [
                         "fullScreen",
@@ -90,6 +90,7 @@ require([], function () {
                         "slideShow",
                         "thumbs",
                         "download",
+                        "share",
                         "close"
                     ],
                 });
