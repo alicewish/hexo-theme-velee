@@ -110,6 +110,16 @@ youyan:
   # id 中填写你的友言用户数字ID，注册后进入后台管理即可查看
   # 友言服务在 Web 环境下运行，普通本地环境无法查看，请部署后在线上测试。
 
+#Valine https://valine.js.org
+valine: 
+ on: true
+ appid:  #Leancloud应用的appId
+ appkey:  #Leancloud应用的appKey
+ verify: false #验证码
+ notify: false #评论回复提醒
+ avatar: mm #评论列表头像样式：''/mm/identicon/monsterid/wavatar/retro/hide
+ placeholder: Just go go #评论框占位符
+ 
 livere:
   #on: true
   id: 
@@ -311,3 +321,4 @@ CDN:
   clipboard: //cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js
   mathjax: //cdn.bootcss.com/mathjax/2.6.1/MathJax.js
   scrollreveal: //cdn.bootcss.com/scrollReveal.js/3.1.4/scrollreveal.min.js
+  valine: //unpkg.com/valine/dist/Valine.min.js
